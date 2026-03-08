@@ -8,8 +8,13 @@ Chaque projet est documenté de façon à reproduire l'environnement et comprend
 ## 🏗️ Infrastructure
 
 ```
-Virtualisation : KVM / QEMU / virt-manager
-Réseau : NAT (virbr0)
+Kali Linux (bare metal)         → 192.168.1.24  — poste principal, pentest
+  └── debian-lab (VM KVM)       → 192.168.1.x   — serveur de lab
+
+Serveur Proxmox (bare metal)    → 192.168.1.x   — hyperviseur dédié lab
+  ├── wazuh-vm                  → SIEM central
+  ├── windows-server            → lab Active Directory (projet 03)
+  └── futures VMs...
 ```
 
 ---
@@ -18,8 +23,9 @@ Réseau : NAT (virbr0)
 
 | # | Projet | Description | Status |
 |---|---|---|---|
+| 00 | [Proxmox Setup](./00-proxmox-setup/README.md) | Installation et configuration d'un hyperviseur Proxmox VE 8.4 | 🔜 En cours |
 | 01 | [Debian Hardening](./01-debian-hardening/README.md) | Durcissement d'un serveur Debian 12 from scratch | ✅ Terminé |
-| 02 | Wazuh SIEM | Déploiement d'un SIEM open source pour centraliser les logs | 🔜 En cours |
+| 02 | Wazuh SIEM | Déploiement d'un SIEM open source pour centraliser les logs | 🔜 Planifié |
 | 03 | Active Directory Lab | Montage d'un AD Windows Server, attaque depuis Kali, remédiation | 🔜 Planifié |
 | 04 | Ansible Hardening | Automatisation du durcissement via Ansible | 🔜 Planifié |
 
@@ -30,7 +36,7 @@ Réseau : NAT (virbr0)
 - Maîtriser l'administration système Linux en environnement sécurisé
 - Comprendre les vecteurs d'attaque pour mieux les défendre
 - Documenter chaque étape pour reproduire et améliorer
-- Progresser vers un rôle d' **Ingénieur Systèmes Linux** avec une spécialisation ** Sécurité **
+- Progresser vers un rôle d'**Ingénieur Systèmes Linux** avec une spécialisation **Sécurité**
 
 ---
 
@@ -38,6 +44,7 @@ Réseau : NAT (virbr0)
 
 ```
 OS          : Debian 12, RHEL, Kali Linux
+Hyperviseur : Proxmox VE 8.4, KVM/QEMU
 Sécu        : Lynis, Fail2ban, Auditd, rkhunter, Wazuh (soon)
 Réseau      : nftables, SSH, OpenVPN, WireGuard
 Supervision : Nagios, Zabbix (soon)
