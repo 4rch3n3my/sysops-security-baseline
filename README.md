@@ -2,7 +2,7 @@
 
 Projet de lab personnel orienté **Administration Système Linux & Sécurité Défensive**.  
 Objectif : déployer une VM Debian 12 from scratch et la durcir selon les bonnes pratiques, en utilisant Lynis comme outil de benchmark.
-
+ 
 ---
 
 ## 🏗️ Architecture du lab
