@@ -23,7 +23,7 @@ Serveur Proxmox (bare metal)    → 192.168.1.x   — hyperviseur dédié lab
 
 | # | Projet | Description | Status |
 |---|---|---|---|
-| 00 | [Proxmox Setup](./00-proxmox-setup/README.md) | Installation et configuration d'un hyperviseur Proxmox VE 8.4 | 🔜 En cours |
+| 00 | [Proxmox Setup](./00-Proxmox-Setup/README.md) | Installation et configuration d'un hyperviseur Proxmox VE 8.4 | 🔜 En cours |
 | 01 | [Debian Hardening](./01-debian-hardening/README.md) | Durcissement d'un serveur Debian 12 from scratch | ✅ Terminé |
 | 02 | Wazuh SIEM | Déploiement d'un SIEM open source pour centraliser les logs | 🔜 Planifié |
 | 03 | Active Directory Lab | Montage d'un AD Windows Server, attaque depuis Kali, remédiation | 🔜 Planifié |
