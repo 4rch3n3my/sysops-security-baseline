@@ -45,7 +45,7 @@ Serveur Proxmox (bare metal)    → 192.168.1.x   — hyperviseur dédié lab
 ```
 OS          : Debian 12, RHEL, Kali Linux
 Hyperviseur : Proxmox VE 8.4, KVM/QEMU
-Sécu        : Lynis, Fail2ban, Auditd, rkhunter, Wazuh (soon)
+Sécu        : Lynis, Fail2ban, Auditd, rkhunter, Wazuh 
 Réseau      : nftables, SSH, OpenVPN, WireGuard
 Supervision : Nagios, Zabbix (soon)
 Automation  : Bash, Ansible (soon)
