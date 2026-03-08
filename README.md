@@ -8,7 +8,6 @@ Chaque projet est documenté de façon à reproduire l'environnement et comprend
 ## 🏗️ Infrastructure
 
 ```
-Hôte : Kali Linux (bare metal)
 Virtualisation : KVM / QEMU / virt-manager
 Réseau : NAT (virbr0)
 ```
