@@ -30,7 +30,7 @@ Réseau : NAT (virbr0)
 - Maîtriser l'administration système Linux en environnement sécurisé
 - Comprendre les vecteurs d'attaque pour mieux les défendre
 - Documenter chaque étape pour reproduire et améliorer
-- Progresser vers un profil **Ingénieur Infrastructure Linux orienté Sécurité**
+- Progresser vers un rôle d' **Ingénieur Systèmes Linux** avec une spécialisation ** Sécurité **
 
 ---
 
